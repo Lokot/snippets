@@ -1,0 +1,14 @@
+[push]
+	default = simple
+[user]
+	email = loktionov@lanit.ru
+[merge]
+	tool = meld
+[mergetool "meld"]
+	cmd = meld $LOCAL $MERGED $REMOTE
+	#cmd = meld.exe \\\"$BASE\\\" \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$MERGED\\\"
+  trustExitCode = false
+[diff]
+	tool = meld
+[difftool "meld"]
+	cmd = meld.exe \\\"$LOCAL\\\" \\\"$REMOTE\\\"
